@@ -48,7 +48,7 @@ namespace PryLacamoireSP1Autocor
 
             objRepuesto.Marca = cmbMarca.Text;
 
-
+            //s
 
             if (rbImportado.Checked == true)
             {
