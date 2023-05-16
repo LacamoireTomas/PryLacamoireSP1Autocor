@@ -37,6 +37,11 @@
             this.cmbMarca = new System.Windows.Forms.ComboBox();
             this.Consultar = new System.Windows.Forms.Button();
             this.cmdSalir = new System.Windows.Forms.Button();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Origen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.mrcOrigen.SuspendLayout();
             this.SuspendLayout();
@@ -44,9 +49,15 @@
             // dgvLista
             // 
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLista.Location = new System.Drawing.Point(30, 197);
+            this.dgvLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Codigo,
+            this.Nombre,
+            this.Marca,
+            this.Precio,
+            this.Origen});
+            this.dgvLista.Location = new System.Drawing.Point(3, 197);
             this.dgvLista.Name = "dgvLista";
-            this.dgvLista.Size = new System.Drawing.Size(345, 159);
+            this.dgvLista.Size = new System.Drawing.Size(403, 159);
             this.dgvLista.TabIndex = 0;
             // 
             // lblMarca
@@ -113,7 +124,6 @@
             this.cmbMarca.Name = "cmbMarca";
             this.cmbMarca.Size = new System.Drawing.Size(121, 21);
             this.cmbMarca.TabIndex = 3;
-            this.cmbMarca.SelectedIndexChanged += new System.EventHandler(this.cmbMarca_SelectedIndexChanged);
             // 
             // Consultar
             // 
@@ -134,6 +144,31 @@
             this.cmdSalir.Text = "Salir";
             this.cmdSalir.UseVisualStyleBackColor = true;
             this.cmdSalir.Click += new System.EventHandler(this.cmdSalir_Click);
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Marca
+            // 
+            this.Marca.HeaderText = "Marca";
+            this.Marca.Name = "Marca";
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.Name = "Precio";
+            // 
+            // Origen
+            // 
+            this.Origen.HeaderText = "Origen";
+            this.Origen.Name = "Origen";
             // 
             // frmConsulta
             // 
@@ -169,5 +204,10 @@
         private System.Windows.Forms.RadioButton rbNacional;
         private System.Windows.Forms.Button Consultar;
         private System.Windows.Forms.Button cmdSalir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Marca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Origen;
     }
 }

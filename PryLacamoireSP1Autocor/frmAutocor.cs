@@ -103,7 +103,7 @@ namespace PryLacamoireSP1Autocor
                 Repuestos.NombreArchivo = PATH_ARCHIVO;
                 Repuestos.GrabarRepuesto(nuevoRep);
                 limpiarcontroles();
-                MessageBox.Show(lblCodigo.Text  +  nuevoRep.Codigo + " " + lblNombre.Text + nuevoRep.Nombre + " " + lblMarca.Text + nuevoRep.Marca + " " + lblPrecio.Text + nuevoRep.Precio + " " + mrcOrigen.Text + nuevoRep.Origen, "Repuesto");
+                MessageBox.Show(lblCodigo.Text + nuevoRep.Codigo + lblNombre.Text + nuevoRep.Nombre + lblMarca.Text + nuevoRep.Marca + lblPrecio.Text + nuevoRep.Precio + mrcOrigen.Text + nuevoRep.Origen, "Repuesto");
             }
             else // si hay algún error
             {
